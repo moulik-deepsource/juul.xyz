@@ -32,6 +32,7 @@ jobs:
           CYPRESS_baseUrl: http://localhost:8080/
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
   test-unit:
     name: 'Unit tests'
     runs-on: ubuntu-latest
