@@ -1,7 +1,9 @@
 <template>
   <div class="home container sm:px-4 py-2 sm:py-0">
 
-    <div class="bg-white font-semibold rounded-2xl h-screen flex flex-col items-center justify-center text-center no-print">
+    <div
+        id="top"
+        class="bg-white font-semibold rounded-2xl h-screen flex flex-col items-center justify-center text-center no-print">
       <p class="text-4xl text-pink-400 mx-4 sm:mx-0">My friends know me as the</p>
       <TypeText
           class="ml-3 text-indigo-500"
@@ -10,7 +12,7 @@
     </div>
 
     <section class="flex flex-col md:flex-row items-center justify-center mb-10">
-      <h1 class="text-red-500 text-4xl py-4 font-bold md:mr-10">Hi! I'm Martin</h1>
+      <h1 id="introduction" class="text-red-500 text-4xl py-4 font-bold md:mr-10">Hi! I'm Martin</h1>
 
       <img
           class="rounded-full portrait"
@@ -48,7 +50,7 @@
       </section>
     </div>
 
-    <h2 class="text-5xl md:py-4 text-center md:text-left font-bold mt-20 mb-10">Career</h2>
+    <h2 id="career" class="text-5xl md:py-4 text-center md:text-left font-bold mt-20 mb-10">Career</h2>
 
     <div class="text-xl px-0 sm:px-10 py-2 rounded-2xl bg-yellow-50 bg-opacity-10">
 
@@ -145,15 +147,19 @@
         </div>
       </section>
     </div>
+
+    <AnchorScroll :anchors="['top', 'introduction', 'career']" />
   </div>
 </template>
 
 <script>
 import TypeText from '@/components/TypeText';
+import AnchorScroll from '@/components/AnchorScroll';
 
 export default {
   name: 'Home',
   components: {
+    AnchorScroll,
     TypeText,
   },
 };
