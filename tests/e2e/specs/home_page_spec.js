@@ -1,6 +1,11 @@
-describe('Home page', () => {
+describe.only('Home page', () => {
   it('successfully loads', () => {
     cy.visit('/');
+  });
+
+  it('looks inside <title> tag', () => {
+    cy.get('head title')
+      .should('contain', 'Juul');
   });
 
   it('has correct h1', () => {
