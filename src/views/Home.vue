@@ -185,7 +185,4 @@ export default {
   }
 }
 
-.animated-waves {
-  background-image: url('../assets/animated-waves.svg');
-}
 </style>
