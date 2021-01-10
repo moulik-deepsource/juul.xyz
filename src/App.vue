@@ -1,8 +1,8 @@
 <template>
-  <div id="app" class="flex flex-col items-center bg-white h-screen" v-cloak>
-    <div
-        class="no-print bg-gray-900 text-gray-200 w-full ease-in-out flex z-10 justify-center">
-      <nav>
+  <div id="app" class="flex flex-col items-center bg-white pb-20" v-cloak>
+    <nav
+        class="mt-auto no-print bg-gray-900 text-gray-200 w-full ease-in-out flex justify-center z-10">
+      <div>
         <router-link
             tag="button"
             class="p-4 hover:text-white no-print hover:bg-gray-600"
@@ -26,22 +26,10 @@
             to="/contact"
         >Contact
         </router-link>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
-    <main>
-      <router-view/>
-    </main>
-
-    <footer class="mt-auto flex justify-center pt-10">
-
-      <img
-          src="./assets/logo.svg"
-          style="height: 84px; margin-left: 150px"
-          alt="Logo"
-      />
-
-    </footer>
+    <router-view/>
   </div>
 </template>
 
