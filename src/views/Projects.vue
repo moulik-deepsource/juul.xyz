@@ -1,5 +1,5 @@
 <template v-cloak>
-  <div class="projects mt-8">
+  <div class="projects">
 
     <Hero title="Projects"/>
 

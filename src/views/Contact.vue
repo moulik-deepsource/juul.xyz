@@ -1,5 +1,5 @@
 <template>
-  <div class="contact container flex flex-col justify-center items-center mt-40">
+  <div class="contact container flex flex-col justify-center items-center">
     <h1 class="text-5xl mb-10 font-bold">Find me here.</h1>
 
     <div class="bg-black p-5 shadow-2xl">
