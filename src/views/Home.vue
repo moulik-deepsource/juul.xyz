@@ -11,8 +11,8 @@
       />
     </div>
 
-    <section class="flex flex-col md:flex-row items-center justify-center mb-10">
-      <h1 id="introduction" class="text-red-500 text-4xl py-4 font-bold md:mr-10">Hi! I'm Martin</h1>
+    <section id="introduction" class="flex flex-col md:flex-row items-center justify-center mb-10">
+      <h1 class="text-red-500 text-4xl py-4 font-bold md:mr-10">Hi! I'm Martin</h1>
 
       <img
           class="rounded-full portrait"
@@ -183,5 +183,9 @@ export default {
   100% {
     background-position: 0 0, 0 0;
   }
+}
+
+.animated-waves {
+  background-image: url('../assets/animated-waves.svg');
 }
 </style>
