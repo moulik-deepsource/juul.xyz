@@ -1,10 +1,11 @@
-<template v-cloak>
+<template>
   <div class="projects">
 
     <Hero title="Projects"/>
 
     <div
         class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-3 sm:px-0"
+        style="min-width: 60vw; min-height: 80vh"
         v-if="repos.length > 0"
     >
       <Repository
