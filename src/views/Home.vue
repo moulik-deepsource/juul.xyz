@@ -1,5 +1,5 @@
 <template>
-  <div class="home container sm:px-4 py-2 sm:py-0">
+  <div class="home container">
 
     <div
         id="top"
