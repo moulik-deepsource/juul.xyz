@@ -28,5 +28,9 @@
 <script>
 export default {
   name: 'Contact',
+  mounted() {
+    document.title = 'Contact | Juul';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Where to find me');
+  },
 };
 </script>

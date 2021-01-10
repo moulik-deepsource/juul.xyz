@@ -38,6 +38,9 @@ export default {
     repos: [],
   }),
   mounted() {
+
+    document.title = 'Projects | Juul';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Personal projects');
     Github.userRepos()
         .then(res => {
           res.json()

@@ -155,6 +155,7 @@
 <script>
 import TypeText from '@/components/TypeText';
 import AnchorScroll from '@/components/AnchorScroll';
+import Github from '@/services/github';
 
 export default {
   name: 'Home',
@@ -162,6 +163,10 @@ export default {
     AnchorScroll,
     TypeText,
   },
+  mounted() {
+    document.title = 'Juul';
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Martin Juul is a software developer');
+  }
 };
 </script>
 
