@@ -1,5 +1,13 @@
 name: main
-on: [ push ]
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
 jobs:
   test-e2e:
     name: 'E2E tests'
