@@ -155,7 +155,6 @@
 <script>
 import TypeText from '@/components/TypeText';
 import AnchorScroll from '@/components/AnchorScroll';
-import Github from '@/services/github';
 
 export default {
   name: 'Home',
