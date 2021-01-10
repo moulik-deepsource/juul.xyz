@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="flex flex-col items-center bg-white pb-20" v-cloak>
     <nav
-        class="mt-auto no-print bg-gray-900 text-gray-200 w-full ease-in-out flex justify-center z-10">
+        class="mt-auto no-print bg-gray-900 text-gray-200 w-full ease-in-out flex justify-center">
       <div>
         <router-link
             tag="button"
