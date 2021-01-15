@@ -5,6 +5,7 @@
     <router-link
         class="hover:underline text-blue-600 hover:text-blue-400 ease-in-out"
         :to="{name: 'Home'}"
+        id="go-to-home-link"
     >Go to home</router-link>
   </div>
 </template>
