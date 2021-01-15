@@ -151,7 +151,7 @@
       </section>
     </div>
 
-    <h2 id="education" class="text-5xl md:py-4 text-center md:text-left font-bold mt-20 mb-10">Education</h2>
+    <h3 id="education" class="text-5xl md:py-4 text-center md:text-left font-bold mt-20 mb-10">Education</h3>
 
     <div class="text-xl px-0 sm:px-10 py-2 rounded-2xl bg-yellow-50 bg-opacity-10">
 
@@ -176,7 +176,7 @@
       </section>
     </div>
 
-    <AnchorScroll :anchors="['top', 'introduction', 'career']"/>
+    <AnchorScroll :anchors="['top', 'introduction', 'career', 'education']"/>
   </div>
 </template>
 
