@@ -26,31 +26,30 @@
       >
     </section>
 
-    <div class="text-xl px-0 sm:px-10 rounded-2xl bg-yellow-50 bg-opacity-20">
-      <section class="flex flex-row justify-between py-10 px-10 sm:px-20">
-        <div class="w-full">
+    <div class="text-xl px-0 sm:px-10 rounded-2xl bg-yellow-50 bg-opacity-20 w-full lg:w-2/3 ml-auto mr-auto">
+      <section
+          class="subpixel-antialiased leading-7 whitespace-pre-line font-light tracking-wide leading-7 py-10 px-10 sm:px-20">
+        <p>
+          23 years old, born and raised in a small town called Munkebo in Denmark.
+        </p>
 
-          <p class="subpixel-antialiased leading-7 whitespace-pre-line font-light tracking-wide leading-7">
-            23 years old, born and raised in a small town called Munkebo in Denmark.
-          </p>
-
-          <p class="subpixel-antialiased leading-7 whitespace-pre-line font-light tracking-wide leading-7">
-            As a programming enthusiast that has been lucky enough, to do the job professionally for
-            the past ~3 years.
-          </p>
-          <p class="subpixel-antialiased leading-7 whitespace-pre-line font-light tracking-wide leading-7">
-            While being employed by vastly different companies.
-          </p>
-          <br/>
-          <p class="subpixel-antialiased leading-7 whitespace-pre-line font-light tracking-wide"> In 2017 i started on a
-            vocational education called <i>Datatechnician specializing in programming</i>
-            at <a href="https://sde.dk" target="_blank" rel="noopener nofollow">Syddansk Erhversskole</a>.
-          </p>
-          <p class="subpixel-antialiased leading-7 whitespace-pre-line font-light tracking-wide">
-            It's a 5 year long education, done in 5 ten week semesters then followed by apprenticeship work
-            in between.
-          </p>
-        </div>
+        <p>
+          As a programming enthusiast that has been lucky enough, to do the job professionally for
+          the past ~3 years.
+        </p>
+        <p>
+          While being employed by vastly different companies.
+        </p>
+        <br/>
+        <p> In 2017 i started on a
+          vocational education called <i>Datatechnician specializing in programming</i>
+          at <a class="text-blue-600 hover:text-blue-300" href="https://sde.dk" target="_blank" rel="noopener nofollow"
+          >Syddansk Erhvervsskole Odense-Vejle</a>.
+        </p>
+        <p>
+          It's a 5 year long education, done in 5 ten week semesters then followed by apprenticeship work
+          in between.
+        </p>
       </section>
     </div>
 
@@ -152,7 +151,32 @@
       </section>
     </div>
 
-    <AnchorScroll :anchors="['top', 'introduction', 'career']" />
+    <h2 id="education" class="text-5xl md:py-4 text-center md:text-left font-bold mt-20 mb-10">Education</h2>
+
+    <div class="text-xl px-0 sm:px-10 py-2 rounded-2xl bg-yellow-50 bg-opacity-10">
+
+      <section class="pt-4 pb-4 py-10 px-10 sm:px-20">
+
+        <div class="divide-y-2 divide-indigo-400 divide-opacity-30">
+          <div class="mb-3">
+            <h3 class="text-2xl font-black text-red-500">Datatechnician specializing in programming</h3>
+            <h4 class="text-xl pb-2 text-gray-600">2017-2022</h4>
+            <h6 class="text-xl pb-2 text-gray-600">Syddansk Erhvervsskole Odense-Vejle</h6>
+            <p class="text-xl pb-2 text-gray-600 italic">Vocational</p>
+
+          </div>
+
+          <div class="py-4">
+            <h3 class="text-2xl font-black text-red-500">Web-Integrator</h3>
+            <h4 class="text-xl pb-2 text-gray-600">2015-2016</h4>
+            <h6 class="text-xl pb-2 text-gray-600">Syddansk Erhvervsskole Odense-Vejle</h6>
+            <p class="text-xl pb-2 text-gray-600 italic">Vocational</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <AnchorScroll :anchors="['top', 'introduction', 'career']"/>
   </div>
 </template>
 
@@ -172,12 +196,12 @@ export default {
      */
     setAnchor(id) {
       this.$router.currentRoute.hash = id;
-    }
+    },
   },
   mounted() {
     document.title = 'Juul';
     document.querySelector('meta[name="description"]').setAttribute('content', 'Martin Juul is a software developer');
-  }
+  },
 };
 </script>
 
