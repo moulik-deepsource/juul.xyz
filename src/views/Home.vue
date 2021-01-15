@@ -11,7 +11,11 @@
       />
     </div>
 
-    <section id="introduction" class="flex flex-col md:flex-row items-center justify-center mb-10">
+    <section
+        id="introduction"
+        class="flex flex-col md:flex-row items-center justify-center mb-10"
+        @click="setAnchor('introduction')"
+    >
       <h1 class="text-red-500 text-4xl py-4 font-bold md:mr-10">Hi! I'm Martin</h1>
 
       <img
@@ -161,6 +165,14 @@ export default {
   components: {
     AnchorScroll,
     TypeText,
+  },
+  methods: {
+    /**
+     * @param {string} id
+     */
+    setAnchor(id) {
+      this.$router.currentRoute.hash = id;
+    }
   },
   mounted() {
     document.title = 'Juul';
