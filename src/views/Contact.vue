@@ -22,6 +22,22 @@
       </div>
     </div>
 
+    <form action="https://send.pageclip.co/XXb20PtxGWiDxWkp93Lvw20mXhmnIUpd/contact-form" class="pageclip-form" method="post">
+
+      <label for="email-input">E-mail</label>
+      <input id="email-input" type="email" name="email" placeholder="johndoe@example.com" required />
+
+      <label for="subject-input">Subject</label>
+      <input id="subject-input" type="text" name="subject" value="Hello Martin" required/>
+
+      <label for="message-textarea">Message</label>
+      <textarea id="message-textarea" name="body" minlength="200" required></textarea>
+
+      <button type="submit" class="pageclip-form__submit">
+        <span>Send</span>
+      </button>
+    </form>
+
   </div>
 </template>
 
