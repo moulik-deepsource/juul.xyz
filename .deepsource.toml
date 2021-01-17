@@ -1,0 +1,24 @@
+version = 1
+
+test_patterns = [
+    "/tests/e2e/specs/**",
+    "/tests/unit/**/*"
+]
+
+exclude_patterns = [
+    "/dist",
+    "/cypress",
+    "/.github"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["vue"]
+  environment = ["browser"]
+
+[[transformers]]
+name = "prettier"
+enabled = true
