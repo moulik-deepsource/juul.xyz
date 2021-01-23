@@ -4,7 +4,6 @@
     class="pageclip-form flex flex-col w-full justify-center"
     method="post"
   >
-
     <label for="email-input">E-mail</label>
     <input
       id="email-input"
@@ -47,23 +46,23 @@
 
 <script>
 export default {
-  name: 'ContactForm',
-}
+  name: "ContactForm",
+};
 </script>
 
 <style>
 .submit-btn {
-    border: double 2px transparent;
-    background-image: linear-gradient(#ffffff, #ffffff),
-    linear-gradient(270deg, #00c5d7, #B95DD7 50%, #FFB367 100%);
-    background-clip: content-box, border-box;
-    background-repeat: no-repeat;
-    background-size: 100% 100%, 100% 200%;
-    background-position: 0 0, 0 100%;
-    background-origin: padding-box, border-box;
-    max-width: 50px;
-    border-radius: 10%;
-    align-self: center;
-    padding: 2px;
+  border: double 2px transparent;
+  background-image: linear-gradient(#ffffff, #ffffff),
+    linear-gradient(270deg, #00c5d7, #b95dd7 50%, #ffb367 100%);
+  background-clip: content-box, border-box;
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100% 200%;
+  background-position: 0 0, 0 100%;
+  background-origin: padding-box, border-box;
+  max-width: 50px;
+  border-radius: 10%;
+  align-self: center;
+  padding: 2px;
 }
 </style>
