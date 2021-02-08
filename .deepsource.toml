@@ -17,7 +17,7 @@ enabled = true
 
   [analyzers.meta]
   plugins = ["vue"]
-  environment = ["browser"]
+  environment = ["browser", "jest"]
 
 [[transformers]]
 name = "prettier"
